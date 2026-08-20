@@ -1,0 +1,77 @@
+# Example Gun Configuration
+id = 0
+
+[item]
+name = "Assault Rifle"
+lore = [
+    "A standard assault rifle",
+    "Full-auto fire mode"
+]
+
+[model]
+default = 1
+ads = 2
+empty = 3
+reload = 4
+
+[death]
+message = "{0} was shot by {1}"
+
+[equip]
+delay_ticks = 20
+
+[crawl]
+required = false
+
+[ammo]
+max = 30
+
+[reload]
+time_ticks = 60
+
+[shoot]
+mode = "auto"
+damage = 6.0
+headshot_multiplier = 2.0
+armor_reduction = 0.5
+resist_reduction = 0.5
+
+[automatic]
+delay = 5
+burst_count = 3
+burst_delays = [5, 10]
+
+[sway]
+base = 1.0
+movement_multiplier = 0.5
+ads_multiplier = 0.3
+
+[recoil]
+base = 0.5
+horizontal = 0.3
+recovery_rate = 0.2
+
+[projectile]
+speed = 50.0
+gravity = 0.0
+lifetime = 100
+range = 100.0
+
+[projectile.particles]
+particle = "FLAME"
+count = 5
+
+[projectile.impact_particles]
+particle = "SMOKE_NORMAL"
+count = 10
+
+[explosion]
+enabled = false
+damage = 0.0
+radius = 0.0
+falloff = 0.0
+
+[sound]
+shoot = "minecraft:entity.generic.explode"
+reload = "minecraft:block.lever.click"
+empty = "minecraft:block.wooden_button.click_off"
