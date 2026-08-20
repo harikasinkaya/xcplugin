@@ -1,0 +1,11 @@
+# Example Ammo Configuration
+id = 0
+
+[item]
+name = "5.56mm Ammo"
+lore = [
+    "Standard rifle ammunition",
+    "Used by assault rifles"
+]
+
+model = 1

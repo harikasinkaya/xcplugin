@@ -1,0 +1,23 @@
+# Example Melee Weapon Configuration
+id = 0
+
+[item]
+name = "Combat Knife"
+lore = [
+    "A sharp combat knife",
+    "Fast attack speed"
+]
+
+[model]
+default = 1
+
+[damage]
+base = 4.0
+armor_reduction = 0.5
+resist_reduction = 0.5
+type = "normal"
+attack_speed = 1.6
+
+[sound]
+hit = "minecraft:entity.player.attack.knockback"
+swing = "minecraft:item.sword.swing"

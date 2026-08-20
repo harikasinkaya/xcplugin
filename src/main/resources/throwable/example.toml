@@ -1,0 +1,28 @@
+# Example Throwable Configuration
+id = 0
+
+[item]
+name = "Fragmentation Grenade"
+lore = [
+    "Standard frag grenade",
+    "Explodes after short delay"
+]
+
+[model]
+default = 1
+
+[throw]
+fuse_ticks = 60
+damage_holder_on_expired = false
+velocity = 1.5
+
+[handlers]
+list = ["explosion"]
+
+[explosion]
+damage = 10.0
+radius = 4.0
+falloff = 1.0
+
+[sound]
+explode = "minecraft:entity.generic.explode"
